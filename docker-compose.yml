@@ -1,0 +1,13 @@
+services:
+  hugo-jh:
+    build: .
+    volumes: 
+      - ./content:/src/jh/content
+      - ./data:/src/jh/data
+      - ./static:/src/jh/static
+      - ./resources:/src/jh/resources
+      - ./archetypes:/src/jh/archetypes
+      - ${HUGO_PUBLIC:-/var/www/jh}:/src/jh/public
+      - ./config.yml:/src/jh/config.yml
+    restart: unless-stopped
+    command: ["-w"]

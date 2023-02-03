@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on John Heaven</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on John Heaven</description>
+    <image>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 23 Nov 2022 11:39:35 +0100</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Part 2: Ambient Data Logger for Raspberry Pi</title>
+      <link>/post/ambient-data-logger-for-rpi/</link>
+      <pubDate>Wed, 23 Nov 2022 11:39:35 +0100</pubDate>
+      
+      <guid>/post/ambient-data-logger-for-rpi/</guid>
+      <description>This is part of a series on my ambient data logging and visualisation setup.
+I&amp;rsquo;ve already given an overview of the entire architecture, and written about setting up the Raspberry Pico(s) as sensor devices. Now I&amp;rsquo;m going to explain how I collect that data in a CSV and Postgres database.
+Dumb sensors The sensors themselves are designed to be quite dumb. They don&amp;rsquo;t log data locally because it&amp;rsquo;s easier to access it if it&amp;rsquo;s stored centrally.</description>
+    </item>
+    
+    <item>
+      <title>Part 1: Building an Ambient Data API With the Raspberry Pico W</title>
+      <link>/post/ambient-data-api-with-raspberry-pico/</link>
+      <pubDate>Tue, 22 Nov 2022 15:02:48 +0100</pubDate>
+      
+      <guid>/post/ambient-data-api-with-raspberry-pico/</guid>
+      <description>In a previous post, I gave an overview of how I collect ambient data using a Raspberry Pi and a couple of Raspberry Pico Ws. In this post, I&amp;rsquo;m going to give more detail on how to set up the Pico to take readings on demand via the network.
+Equipment If you want to try this at home, you&amp;rsquo;ll need:
+A Raspberry Pico W with MicroPython installed A soldering iron and paraphernalia (or another way of connecting the sensor to the Pico W such as breadboard and jumpers) A DHT-22 or BME280 sensor A wifi network Attaching a sensor to your Pico W The MicroPython code I wrote has support for two sensors: the DHT-22 and the BME280.</description>
+    </item>
+    
+    <item>
+      <title>Part 0: Logging and visualising ambient data with a Raspberry Pico W</title>
+      <link>/post/logging-ambient-data-raspberry-pico-grafana-pi/</link>
+      <pubDate>Tue, 22 Nov 2022 12:49:48 +0100</pubDate>
+      
+      <guid>/post/logging-ambient-data-raspberry-pico-grafana-pi/</guid>
+      <description>The Raspberry Pico W is a cheap microcontroller (around €8) that can control sensors and access a WIFI network. With a bit of soldering and MicroPython, you can have it serving JSON data over your local network, then log it with a database and visualise it in a dashboard. Here I&amp;rsquo;m just going to briefly describe my setup as the basis for later blog articles.
+Overall setup Architecture diagram
+Full-size image</description>
+    </item>
+    
+  </channel>
+</rss>
