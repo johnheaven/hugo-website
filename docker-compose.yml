@@ -2,7 +2,7 @@ services:
   hugo-jh:
     build: .
     volumes: 
-      - ${HUGO_CONTENT:-/home/johnheaven/hugo/content}:/src/jh/content}
+      - ${HUGO_CONTENT:-/home/johnheaven/hugo/content}:/src/jh/content
       - ${HUGO_DATA:-/home/johnheaven/hugo/data}:/src/jh/data
       - ${HUGO_STATIC:-/home/johnheaven/hugo/static}:/src/jh/static
       - ${HUGO_RESOURCES:-/home/johnheaven/hugo/resources}:/src/jh/resources
