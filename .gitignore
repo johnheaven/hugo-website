@@ -3,4 +3,6 @@
 .hugo_build.lock
 content/**
 !content/.gitkeep
-resources
+resources/**
+!resources/.gitkeep
+

@@ -2,12 +2,11 @@ services:
   hugo-jh:
     build: .
     volumes: 
-      - ./content:/src/jh/content
-      - ./data:/src/jh/data
-      - ./static:/src/jh/static
-      - ./resources:/src/jh/resources
-      - ./archetypes:/src/jh/archetypes
+      - ${HUGO_CONTENT:-/home/johnheaven/hugo/content}:/src/jh/content}
+      - ${HUGO_DATA:-/home/johnheaven/hugo/data}:/src/jh/data
+      - ${HUGO_STATIC:-/home/johnheaven/hugo/static}:/src/jh/static
+      - ${HUGO_RESOURCES:-/home/johnheaven/hugo/resources}:/src/jh/resources
       - ${HUGO_PUBLIC:-/var/www/jh}:/src/jh/public
-      - ./config.yml:/src/jh/config.yml
+      - ${HUGO_CONFIG:-./config.yml}:/src/jh/config.yml
     restart: unless-stopped
     command: ["-w"]
